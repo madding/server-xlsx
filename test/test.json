@@ -1,0 +1,203 @@
+{
+  "fields": [
+      {      
+        "columnName": "Name",
+        "type": "String",
+        "name": "Номер счёта"
+      },
+      {
+        "columnName": "Status",
+        "type": "Select",
+        "name": "Статус\nсчета",
+        "options": {
+          "11": "Open",
+          "22": "Cleared"
+        }
+      },
+      {
+        "columnName": "Amount",
+        "type": "MoneyWithCurrency",
+        "name": "Сумма",
+        "tableAlign": "right"
+      },
+      {
+        "columnName": "DocDate",
+        "type": "Date",
+        "name": "Doc Date",
+        "tableAlign": "center"
+      },
+      {
+        "columnName": "Overdue",
+        "type": "Int",
+        "name": "Overdue\n(days)",
+        "tableAlign": "center"
+      },
+      {
+        "columnName": "ShipmentETS",
+        "type": "Date",
+        "name": "Shipment: ETS",
+        "tableAlign": "center"
+      },
+      {
+        "columnName": "Comments",
+        "type": "Text",
+        "name": "Комментарии"
+      }
+  ],
+  "data": [
+    {
+      "Name": "110012",
+      "CompanyID": 2,
+      "DocType": 1,
+      "Status": 22,
+      "DocDate": "2016-01-05",
+      "CacheLinesContainerName": "MSKU3895543",
+      "Amount": "RUB 2855.00",
+      "Overdue": -999,
+      "ShipmentETS": "2015-12-01",
+      "Comments": "",
+      "LinesTotalOriginalAmount": "RUB 1755.00\nRUB 1100.00",
+      "ID": 200214
+    },
+    {
+      "Name": "110019",
+      "CompanyID": 2,
+      "DocType": 1,
+      "Status": 22,
+      "DocDate": "2016-01-04",
+      "CacheLinesContainerName": "PONU1323554",
+      "Amount": "RUB 2505.00",
+      "Overdue": -999,
+      "ShipmentETS": "2015-11-24",
+      "Comments": "",
+      "LinesTotalOriginalAmount": "RUB 1755.00\nRUB 750.00",
+      "ID": 200676
+    },
+    {
+      "Name": "202327",
+      "CompanyID": 4,
+      "DocType": 1,
+      "Status": 22,
+      "DocDate": "2016-01-04",
+      "CacheLinesContainerName": "MSKU9962274",
+      "Amount": "USD 877.56",
+      "Overdue": -999,
+      "ShipmentETS": "2015-11-22",
+      "Comments": "",
+      "LinesTotalOriginalAmount": "USD 877.56",
+      "ID": 199612
+    },
+    {
+      "Name": "202326",
+      "CompanyID": 4,
+      "DocType": 1,
+      "Status": 22,
+      "DocDate": "2016-01-04",
+      "CacheLinesContainerName": "TGHU7058830",
+      "Amount": "USD 877.56",
+      "Overdue": -999,
+      "ShipmentETS": "2015-11-22",
+      "Comments": "",
+      "LinesTotalOriginalAmount": "USD 877.56",
+      "ID": 199611
+    },
+    {
+      "Name": "202325",
+      "CompanyID": 4,
+      "DocType": 1,
+      "Status": 22,
+      "DocDate": "2016-01-04",
+      "CacheLinesContainerName": "MSKU9962274",
+      "Amount": "USD 1050.00",
+      "Overdue": -999,
+      "ShipmentETS": "2015-11-22",
+      "Comments": "",
+      "LinesTotalOriginalAmount": "USD 900.00\nUSD 150.00",
+      "ID": 199610
+    },
+    {
+      "Name": "202324",
+      "CompanyID": 4,
+      "DocType": 1,
+      "Status": 22,
+      "DocDate": "2016-01-04",
+      "CacheLinesContainerName": "TGHU7058830",
+      "Amount": "USD 1050.00",
+      "Overdue": -999,
+      "ShipmentETS": "2015-11-22",
+      "Comments": "",
+      "LinesTotalOriginalAmount": "USD 900.00\nUSD 150.00",
+      "ID": 199609
+    },
+    {
+      "Name": "202318",
+      "CompanyID": 4,
+      "DocType": 1,
+      "Status": 22,
+      "DocDate": "2016-01-04",
+      "CacheLinesContainerName": "PONU7323382",
+      "Amount": "USD 2750.00",
+      "Overdue": -999,
+      "ShipmentETS": "2015-12-31",
+      "Comments": "",
+      "LinesTotalOriginalAmount": "USD 1450.00\nUSD 1300.00",
+      "ID": 199603
+    },
+    {
+      "Name": "203209",
+      "CompanyID": 4,
+      "DocType": 1,
+      "Status": 22,
+      "DocDate": "2016-01-01",
+      "CacheLinesContainerName": "GVCU4131710\nMSKU0031769\nMSKU1894131\nMRKU3896701\nCBHU9487273\nCBHU8774366\nMSKU7538919\nPONU7203448\nCBHU4251259\nMRSU0128596\nMRKU5216948",
+      "Amount": "USD 6155.04",
+      "Overdue": -999,
+      "ShipmentETS": "2015-10-19\n2015-11-14\n2015-11-15\n2015-11-27\n2015-11-29\n2015-11-21\n2015-12-04\n2015-12-11\n2015-11-30",
+      "Comments": "",
+      "LinesTotalOriginalAmount": "USD 0.00\nUSD 0.00\nUSD 0.00\nUSD 0.00\nUSD 0.00\nUSD 0.00\nUSD 0.00\nUSD 0.00\nUSD 0.00\nUSD 0.00\nUSD 0.00\nUSD 0.00",
+      "ID": 229450
+    },
+    {
+      "Name": "301244",
+      "CompanyID": 3,
+      "DocType": 1,
+      "Status": 22,
+      "DocDate": "2016-01-01",
+      "CacheLinesContainerName": null,
+      "Amount": "USD 340765.82",
+      "Overdue": -999,
+      "ShipmentETS": "2015-12-22\n2016-01-07\n2015-12-28\n2015-12-12\n2015-12-14\n2015-12-10\n2015-07-27\n2015-08-03\n2015-09-01\n2015-10-06\n2015-10-16\n2015-12-20\n2015-10-19\n2015-12-17\n2015-10-15\n2015-10-20\n2015-10-24\n2015-10-31\n2015-11-28\n2015-11-03\n2015-10-26\n2015-10-30\n2015-11-14\n2015-11-07\n2015-11-23\n2015-11-11\n2015-11-30\n2015-11-29\n2015-12-18\n2015-12-27\n2016-01-01\n2015-12-24\n2016-01-09\n2016-01-04\n2015-12-21\n2015-11-13\n2015-12-31\n2015-11-16\n2015-11-15\n2015-11-27\n2015-11-25\n2015-11-22\n2015-11-17\n2015-12-04\n2015-11-21\n2015-12-01\n2015-12-11\n2015-12-02\n2015-12-05\n2015-12-07\n2015-12-08\n2015-12-26\n2015-12-23\n2016-01-14\n2015-12-19\n2016-01-13\n2016-01-02\n2016-01-05\n2015-12-30\n2015-12-25\n2016-01-12",
+      "Comments": "",
+      "LinesTotalOriginalAmount": "USD 700.00\nUSD 1950.00\nUSD 700.00\nUSD 500.00\nUSD 500.00\nUSD 500.00\nUSD 700.00\nUSD 1550.00\nUSD 1950.00\nUSD 65.45\nUSD 109.08\nUSD 65.45\nUSD 43.63\nUSD 109.08\nUSD 87.26\nUSD 1188.00\nUSD 700.00\nUSD 76.92\nUSD 700.00\nUSD 69.40\nUSD 69.87\nUSD 69.87\nUSD 850.00\nUSD 76.92\nUSD 42.54\nUSD 42.54\nUSD 42.54\nUSD 700.00\nUSD 700.00\nUSD 272.70\nUSD 42.54\nUSD 42.54\nUSD 76.92\nUSD 42.54\nUSD 42.54\nUSD 42.54\nUSD 42.54\nUSD 42.54\nUSD 42.54\nUSD 42.54\nUSD 42.54\nUSD 1350.00\nUSD 815.00\nUSD 1350.00\nUSD 850.00\nUSD 76.92\nUSD 76.92\nUSD 76.92\nUSD 815.00\nUSD 815.00\nUSD 815.00\nUSD 815.00\nUSD 815.00\nUSD 350.00\nUSD 615.00\nUSD 200.00\nUSD 615.00\nUSD 200.00\nUSD 615.00\nUSD 200.00\nUSD 615.00\nUSD 200.00\nUSD 350.00\nUSD 615.00\nUSD 200.00\nUSD 1150.00\nUSD 1150.00\nUSD 1150.00\nUSD 1150.00\nUSD 1150.00\nUSD 1150.00\nUSD 1150.00\nUSD 1150.00\nUSD 815.00\nUSD 69.07\nUSD 975.00\nUSD 198.00\nUSD 605.00\nUSD 200.11\nUSD 200.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 160.00\nUSD 2300.00\nUSD 490.00\nUSD 2300.00\nUSD 490.00\nUSD 2300.00\nUSD 490.00\nUSD 2300.00\nUSD 490.00\nUSD 1014.00\nUSD 1046.00\nUSD 198.50\nUSD 615.00\nUSD 198.50\nUSD 615.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 850.00\nUSD 850.00\nUSD 850.00\nUSD 850.00\nUSD 850.00\nUSD 700.00\nUSD 850.00\nUSD 1250.00\nUSD 2100.00\nUSD 1250.00\nUSD 1950.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 1250.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 500.00\nUSD 700.00\nUSD 700.00\nUSD 615.00\nUSD 200.00\nUSD 615.00\nUSD 200.00\nUSD 615.00\nUSD 200.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 1250.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 1250.00\nUSD 1250.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 700.00\nUSD 200.00\nUSD 1403.00\nUSD 179.44\nUSD 1100.00\nUSD 1100.00\nUSD 1100.00\nUSD 1350.00\nUSD 1350.00\nUSD 1350.00\nUSD 1100.00\nUSD 1350.00\nUSD 1100.00\nUSD 1364.00\nUSD 1100.00\nUSD 1100.00\nUSD 1350.00\nUSD 1100.00\nUSD 1350.00\nUSD 1350.00\nUSD 1350.00\nUSD 1100.00\nUSD 1350.00\nUSD 160.00\nUSD 225.00\nUSD 225.00\nUSD 193.88\nUSD 753.00\nUSD 195.91\nUSD 700.00\nUSD 700.00\nUSD 1300.00\nUSD 193.88\nUSD 1290.00\nUSD 900.00\nUSD 200.00\nUSD 840.00\nUSD 200.00\nUSD 1500.00\nUSD 200.00\nUSD 753.00\nUSD 195.91\nUSD 1103.00\nUSD 198.50\nUSD 615.00\nUSD 198.50\nUSD 615.00\nUSD 1190.00\nUSD 1030.00\nUSD 531.66\nUSD 771.34\nUSD 850.00\nUSD 900.00\nUSD 200.00\nUSD 1400.00\nUSD 200.00\nUSD 1294.00\nUSD 964.00\nUSD 703.00\nUSD 703.00\nUSD 703.00\nUSD 1290.00\nUSD 200.00\nUSD 950.00\nUSD 200.00\nUSD 950.00\nUSD 250.00\nUSD 200.00\nUSD 950.00\nUSD 250.00\nUSD 935.00\nUSD 1103.00\nUSD 627.00\nUSD 710.00\nUSD 193.88\nUSD 1040.00\nUSD 1253.00\nUSD 33.00\nUSD 700.00\nUSD 703.00\nUSD 1053.00\nUSD 710.00\nUSD 1253.00\nUSD 583.00\nUSD 150.00\nUSD 50.83\nUSD 200.00\nUSD 1030.44\nUSD 1311.46\nUSD 450.00\nUSD 2022.00\nUSD 306.06\nUSD 1285.45\nUSD 448.89\nUSD 400.00\nUSD 1053.00\nUSD 1112.75\nUSD 350.00\nUSD 950.00\nUSD 1015.00\nUSD 890.00\nUSD 1617.00\nUSD 130.54\nUSD 1515.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1250.00\nUSD 1926.81\nUSD 214.09\nUSD 1800.00\nUSD 1800.00\nUSD 1950.00\nUSD 1800.00\nUSD 1800.00\nUSD 1800.00\nUSD 1950.00\nUSD 1100.00\nUSD 1800.00\nUSD 1950.00\nUSD 1950.00\nUSD 1950.00\nUSD 1800.00\nUSD 1800.00\nUSD 1800.00\nUSD 1800.00\nUSD 1800.00\nUSD 1800.00\nUSD 1950.00\nUSD 1800.00\nUSD 1800.00\nUSD 1950.00\nUSD 1950.00\nUSD 1950.00\nUSD 1100.00\nUSD 1250.00\nUSD 2152.94\nUSD 239.21\nUSD 1950.00\nUSD 3050.00\nUSD 200.00\nUSD 632.53\nUSD 632.53\nUSD 102.02\nUSD 224.44\nUSD 448.88\nUSD 1550.00\nUSD 1750.00\nUSD 1300.00\nUSD 1939.90\nUSD 840.00\nUSD 328.00\nUSD 1195.00\nUSD 328.00\nUSD 2058.14\nUSD 202.00\nUSD 848.00\nUSD 597.00\nUSD 1950.00\nUSD 1950.00\nUSD 1950.00\nUSD 1750.00\nUSD 1750.00\nUSD 1585.00\nUSD 328.00\nUSD 1800.00\nUSD 1750.00\nUSD 1750.00\nUSD 1750.00\nUSD 182.50\nUSD 11450.00\nUSD 200.00",
+      "ID": 201158
+    },
+    {
+      "Name": "040007",
+      "CompanyID": 2,
+      "DocType": 1,
+      "Status": 22,
+      "DocDate": "2016-01-01",
+      "CacheLinesContainerName": "CBHU8774366",
+      "Amount": "USD 225.00",
+      "Overdue": -999,
+      "ShipmentETS": "2015-11-15",
+      "Comments": "",
+      "LinesTotalOriginalAmount": "USD 225.00",
+      "ID": 201114
+    },
+    {
+      "Name": "040006",
+      "CompanyID": 2,
+      "DocType": 1,
+      "Status": 22,
+      "DocDate": "2016-01-01",
+      "CacheLinesContainerName": "CBHU9487273",
+      "Amount": "USD 225.00",
+      "Overdue": -999,
+      "ShipmentETS": "2015-11-15",
+      "Comments": "",
+      "LinesTotalOriginalAmount": "USD 225.00",
+      "ID": 201113
+    }
+  ]
+}

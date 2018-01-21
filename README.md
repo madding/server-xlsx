@@ -11,4 +11,5 @@
 ## Post request
 ```
   curl localhost:5000 -X POST -d "columns[]=id" -d "columns[]=name" -d "data[1]=1" -d "data[1]=eu" -d "data[2]=2" -d "data[2]=ue"
+  curl localhost:5000 -X POST -d "columns[]=id" -d "columns[]=name" -d "data[1]=1" -d "data[1]=eu" -d "data[2]=2" -d "data[2]=ue"
 ```

@@ -9,7 +9,6 @@ import (
 	"net/http"
 	"os"
 	"path"
-	"reflect"
 	"strconv"
 	"strings"
 	"time"
@@ -55,13 +54,10 @@ func XLSXFormatter(w http.ResponseWriter, r *http.Request) {
 
 	for rowIndex, position := range params.Data {
 		for colIndex, column := range params.Fields {
-			val := reflect.ValueOf(position)
 			var recordValue interface{}
-			for i := 0; i < val.NumField(); i++ {
-				valueField := val.Field(i)
-				typeField := val.Type().Field(i)
-				if typeField.Name == column.ColumnName {
-					recordValue = valueField.Interface()
+			for columnName, recValue := range position {
+				if columnName == column.ColumnName {
+					recordValue = recValue
 				}
 			}
 
@@ -79,14 +75,14 @@ func XLSXFormatter(w http.ResponseWriter, r *http.Request) {
 					style, _ := xlsx.NewStyle(styleParams.ToJSON())
 					xlsx.SetCellStyle(SheetName, cellNumber, cellNumber, style)
 
-					intValue, OK := recordValue.(int)
+					intValue, OK := recordValue.(float64) // idk but not int
 					if OK {
-						xlsx.SetCellValue(SheetName, cellNumber, intValue)
+						xlsx.SetCellValue(SheetName, cellNumber, int64(intValue))
 					} else {
 						xlsx.SetCellValue(SheetName, cellNumber, recordValue)
 					}
 				case "Select":
-					selectValue, OK := recordValue.(int)
+					selectValue, OK := recordValue.(float64)
 					style, _ := xlsx.NewStyle(styleParams.ToJSON())
 					xlsx.SetCellStyle(SheetName, cellNumber, cellNumber, style)
 

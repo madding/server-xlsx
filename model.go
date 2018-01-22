@@ -13,20 +13,7 @@ type ParamsBody struct {
 		TableAlign string            `json:"tableAlign,omitempty"`
 		Options    map[string]string `json:"options,omitempty"`
 	} `json:"fields"`
-	Data []struct {
-		Name                     string `json:"Name"`
-		CompanyID                int    `json:"CompanyID"`
-		DocType                  int    `json:"DocType"`
-		Status                   int    `json:"Status"`
-		DocDate                  string `json:"DocDate"`
-		CacheLinesContainerName  string `json:"CacheLinesContainerName"`
-		Amount                   string `json:"Amount"`
-		Overdue                  int    `json:"Overdue"`
-		ShipmentETS              string `json:"ShipmentETS"`
-		Comments                 string `json:"Comments"`
-		LinesTotalOriginalAmount string `json:"LinesTotalOriginalAmount"`
-		ID                       int    `json:"ID"`
-	} `json:"data"`
+	Data []map[string]interface{} `json:"data"`
 }
 
 // Style - style model

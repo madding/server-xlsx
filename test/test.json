@@ -1,48 +1,48 @@
 {
   "fields": [
-      {      
-        "columnName": "Name",
-        "type": "String",
-        "name": "Номер счёта"
-      },
-      {
-        "columnName": "Status",
-        "type": "Select",
-        "name": "Статус\nсчета",
-        "options": {
-          "11": "Open",
-          "22": "Cleared"
-        }
-      },
-      {
-        "columnName": "Amount",
-        "type": "MoneyWithCurrency",
-        "name": "Сумма",
-        "tableAlign": "right"
-      },
-      {
-        "columnName": "DocDate",
-        "type": "Date",
-        "name": "Doc Date",
-        "tableAlign": "center"
-      },
-      {
-        "columnName": "Overdue",
-        "type": "Int",
-        "name": "Overdue\n(days)",
-        "tableAlign": "center"
-      },
-      {
-        "columnName": "ShipmentETS",
-        "type": "Date",
-        "name": "Shipment: ETS",
-        "tableAlign": "center"
-      },
-      {
-        "columnName": "Comments",
-        "type": "Text",
-        "name": "Комментарии"
+    {
+      "key": "Name",
+      "type": "String",
+      "name": "Номер счёта"
+    },
+    {
+      "key": "Status",
+      "type": "Select",
+      "name": "Статус\nсчета",
+      "options": {
+        "11": "Open",
+        "22": "Cleared"
       }
+    },
+    {
+      "key": "Amount",
+      "type": "MoneyWithCurrency",
+      "name": "Сумма",
+      "tableAlign": "right"
+    },
+    {
+      "key": "DocDate",
+      "type": "Date",
+      "name": "Doc Date",
+      "tableAlign": "center"
+    },
+    {
+      "key": "Overdue",
+      "type": "Int",
+      "name": "Overdue\n(days)",
+      "tableAlign": "center"
+    },
+    {
+      "key": "ShipmentETS",
+      "type": "Date",
+      "name": "Shipment: ETS",
+      "tableAlign": "center"
+    },
+    {
+      "key": "Comments",
+      "type": "Text",
+      "name": "Комментарии"
+    }
   ],
   "data": [
     {

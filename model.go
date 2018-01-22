@@ -8,7 +8,7 @@ import (
 // ParamsBody - params file
 type ParamsBody struct {
 	Fields []struct {
-		ColumnName string            `json:"columnName"`
+		ColumnName string            `json:"key"`
 		Type       string            `json:"type"`
 		Name       string            `json:"name"`
 		TableAlign string            `json:"tableAlign,omitempty"`

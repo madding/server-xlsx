@@ -14,7 +14,6 @@ import (
 	"time"
 
 	"github.com/360EntSecGroup-Skylar/excelize"
-	"github.com/gorilla/mux"
 	uuid "github.com/satori/go.uuid"
 )
 
@@ -27,12 +26,11 @@ func main() {
 		port = "5000"
 	}
 
-	r := mux.NewRouter()
-	r.HandleFunc("/", XLSXFormatter)
+	http.HandleFunc("/", XLSXFormatter)
 
 	serverPath := fmt.Sprintf("localhost:%s", port)
 	log.Printf("Start server on http://%s\n", serverPath)
-	if err := http.ListenAndServe(serverPath, r); err != nil {
+	if err := http.ListenAndServe(serverPath, nil); err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
 }

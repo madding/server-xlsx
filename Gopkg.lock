@@ -8,20 +8,14 @@
   version = "v1.2"
 
 [[projects]]
-  name = "github.com/gorilla/context"
+  name = "github.com/satori/go.uuid"
   packages = ["."]
-  revision = "1ea25387ff6f684839d82767c1733ff4d4d15d0a"
-  version = "v1.1"
-
-[[projects]]
-  name = "github.com/gorilla/mux"
-  packages = ["."]
-  revision = "53c1911da2b537f792e7cafcb446b05ffe33b996"
-  version = "v1.6.1"
+  revision = "f58768cc1a7a7e77a3bd49e98cdd21419399b6a3"
+  version = "v1.2.0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "aae775976f7a2ac59486c78f4475014ef84945bae2b64406fc59af11ee27756d"
+  inputs-digest = "d4671a45d179a8977e5b374f72959aa24ec5641aa3b94d4694fc5ba49a192ec9"
   solver-name = "gps-cdcl"
   solver-version = 1

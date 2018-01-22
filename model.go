@@ -26,7 +26,7 @@ type Style struct {
 	CustomNumberFormat string `json:"custom_number_format,omitempty"`
 }
 
-// ToJSON - export to JSON
+// ToJSON - export style to JSON
 func (style Style) ToJSON() string {
 	res, err := json.Marshal(style)
 	if err != nil {

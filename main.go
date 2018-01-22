@@ -40,35 +40,7 @@ func main() {
 
 // XLSXFormatter - create and return xlsx file
 func XLSXFormatter(w http.ResponseWriter, r *http.Request) {
-	// err := r.ParseForm()
-	// if err != nil {
-	// 	log.Println("Bad Request", err)
-	// }
-
 	params := ParseRequestBody(r.Body)
-
-	// var columns []string
-
-	// for _, column := range params.Fields {
-	// 	columns = append(columns, column["name"])
-	// }
-
-	// type record []string
-	// var records []record
-
-	// for _, rec := range params.Data {
-	// 	rec := make(record, 0, 10)
-
-	// 	rec = append(rec, value...)
-	// 	records = append(records, rec)
-	// }
-
-	// if len(records) == 0 {
-	// 	w.WriteHeader(http.StatusBadRequest)
-	// 	w.Write([]byte("Data not found in request"))
-
-	// 	return
-	// }
 
 	xlsx := excelize.NewFile()
 

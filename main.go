@@ -130,8 +130,6 @@ func XLSXFormatter(w http.ResponseWriter, r *http.Request) {
 					}
 				case "Date":
 					stringValue, OK := recordValue.(string)
-					style, _ := xlsx.NewStyle(styleParams.ToJSON())
-					xlsx.SetCellStyle(SheetName, cellNumber, cellNumber, style)
 
 					if OK {
 						dateValue, err := time.Parse("2006-01-02", stringValue)
@@ -147,19 +145,23 @@ func XLSXFormatter(w http.ResponseWriter, r *http.Request) {
 								}
 							}
 
+							styleParams.Alignment.WrapText = true
+							style, _ := xlsx.NewStyle(styleParams.ToJSON())
+							xlsx.SetCellStyle(SheetName, cellNumber, cellNumber, style)
 							xlsx.SetCellValue(SheetName, cellNumber, strings.Join(res, "\n"))
 							break
 						}
 
 						styleParams.CustomNumberFormat = "[$-380A]dd.mm.yyyy"
 						style, _ := xlsx.NewStyle(styleParams.ToJSON())
-
 						if err != nil {
 							log.Println(err)
 						}
 						xlsx.SetCellValue(SheetName, cellNumber, dateValue)
 						xlsx.SetCellStyle(SheetName, cellNumber, cellNumber, style)
 					} else {
+						style, _ := xlsx.NewStyle(styleParams.ToJSON())
+						xlsx.SetCellStyle(SheetName, cellNumber, cellNumber, style)
 						xlsx.SetCellValue(SheetName, cellNumber, recordValue)
 					}
 				default:

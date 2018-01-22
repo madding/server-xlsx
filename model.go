@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"log"
 )
 
 // ParamsBody - params file
@@ -35,6 +34,7 @@ type Style struct {
 	Alignment struct {
 		Horizontal string `json:"horizontal,omitempty"`
 		Vertical   string `json:"vertical,omitempty"`
+		WrapText   bool   `json:"wrap_text,omitempty"`
 	} `json:"alignment"`
 	CustomNumberFormat string `json:"custom_number_format,omitempty"`
 }
@@ -46,6 +46,5 @@ func (style Style) ToJSON() string {
 		return ""
 	}
 
-	log.Println(string(res))
 	return string(res)
 }

@@ -75,9 +75,9 @@ func XLSXFormatter(w http.ResponseWriter, r *http.Request) {
 					style, _ := xlsx.NewStyle(styleParams.ToJSON())
 					xlsx.SetCellStyle(SheetName, cellNumber, cellNumber, style)
 
-					intValue, OK := recordValue.(float64) // idk but not int
+					numberValue, OK := recordValue.(float64)
 					if OK {
-						xlsx.SetCellValue(SheetName, cellNumber, int64(intValue))
+						xlsx.SetCellValue(SheetName, cellNumber, int64(numberValue))
 					} else {
 						xlsx.SetCellValue(SheetName, cellNumber, recordValue)
 					}
